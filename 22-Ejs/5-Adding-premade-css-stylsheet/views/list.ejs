@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- mare grija cu linkuirea aici a css cu href -->
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    
+      <!-- Pentur a importa css cremm un folder public unde introducem css si apoi in appjs specificam locatia -->
+ 
+    <title>To Do List</title>
+</head>
+<body>
+
+  <div class="box" id="heading">
+    <h1> <%=kindOfDay%> </h1>
+  </div>
+
+
+<div class="box">
+
+    <%for(let i=0;i<newListItems.length;i++){ %>
+      <div class="item">
+        <input type="checkbox">
+        <p><%=newListItems[i]%></p>
+        </div>
+  <%  } %>
+ 
+  <form action="/" method="post" class="item">
+    <input type="text" name="newItem" placeholder="New item" autocomplete="off">
+    <button type="submit" name="button"> +</button>
+  </form>
+</div>
+   
+
+</body>
+</html>

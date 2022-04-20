@@ -1,0 +1,4 @@
+ git clone  se utilizeaza pentru a clona un repozitoriui remote
+-copiind url repozitoriului care vrem sa clonam
+
+git clone url

@@ -1,0 +1,26 @@
+pentru a face un branch de forma locala
+
+git branch alien-plot
+
+ git branch   pentru a vedea ce branchuri avem
+
+asterxu ne arata pe care branch suntem, putem schimba de branch cu 
+
+git checkout alien-plot
+
+cand utilizam git checkout pentru a ne misca prin branchururi practic ne dispar fisiere din folder in caz ca in un brach avem acele fisiere si in altu nu
+
+iar acum putem sa modificam unele luriri si dupa sa le salvam in branchu asta
+
+git log pentru a vedea comiturile
+
+pentru a uni brachurile trebuie sa intram in master si merge cu numele branchului care vrem sa unim
+
+git merge alien-plot
+
+iar dupa putem sa urcam la repositoriou remote cu git push  origin master -u
+
+
+
+
+ 

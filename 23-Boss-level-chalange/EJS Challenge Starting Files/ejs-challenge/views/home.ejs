@@ -1,0 +1,22 @@
+<!-- pentru a adauga un fisier trebuie sa il aducem de la ruta lui -->
+
+<!-- ca sa ii facem un render la orice pagina cum este home sau etc trebuie sa ii face un get ssi dupa un render in `app.js -->
+
+<%- include("partials/header") -%>
+    <h1>Home</h1>
+
+<p><%=homeStartingContent%></p>
+
+
+ <%   posts.map(post=>{ %>
+     <h1> <%=post.title %> </h1>
+     <!-- si asa accesam de forma dinamica paginile -->
+     <p ><%=post.content.substring(0,100) + "..." %> <a href="<%= 'posts/' + post.title %>">Read more</a></p>
+
+<% }) %>
+
+<%- include("partials/footer") -%>
+
+</body>
+</html>
+

@@ -1,0 +1,32 @@
+<%- include("header") -%>
+
+  <div class="box" id="heading">
+    <h1> <%= listTitle %> </h1>
+  </div>
+
+
+
+
+  <div class="box">
+    <% newListItems.map(item=>{ %>
+      <!-- aici vom crea un for si un post route pentru a introduce functinalittea delte -->
+      <form action="/delete" method="post">
+      
+      <div class="item">
+        <!-- aici ii punem onchange pentru ca in ap.js sa putem verifica nd se schimba sa stearga itemu respectiv ,pentru asta ii dam un value care o sa fie egal cu id itemului unde este creat  -->
+        <input type="checkbox" name="checkbox" value="<%=item._id%>" onChange="this.form.submit()">
+        <p><%=  item.name %></p>
+      </div>
+      <!-- aici creem un input ascus cu hidden pentru al utiliza ca sa stergem continut din listele dinamice -->
+      <input type="hidden" name="listName" value="<%= listTitle %>"></input>
+   
+    </form>
+      <% }) %>
+
+      <form class="item" action="/" method="post">
+        <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+        <button type="submit" name="list" value="<%= listTitle %>">+</button>
+      </form>
+  </div>
+
+<%- include("footer") -%>

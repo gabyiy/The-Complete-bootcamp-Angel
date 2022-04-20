@@ -1,0 +1,8 @@
+1 creem repositoriu in gihub
+
+2 copiem adresa noului repositoriu
+
+3 creem legatura cu repozitoiu remote 
+-git add origin (apoi copiem remote url  repositori),acum este create legatura cu remote
+-git push  -u origin master (pentru a transfera toate datele in repostoriu remote)
+

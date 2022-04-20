@@ -1,0 +1,7 @@
+cu fork facem un copy la repozitoriu pe care o salvam in propriu nostru githuib acount
+
+in fisierele disponiobile putem sa facem modificari dupa care facem un commit
+
+in insigth ,network putem sa vedem cine a facut fork sau ce branchuri avem etc
+
+cand vrem sa fac em un pull request(trimite pull la cel care a creat repozitoriu si la care am facut fork)acesta daca doreste accpeta pull practic isi adauga continutu facut de mine la repozitoriu lui

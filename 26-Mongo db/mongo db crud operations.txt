@@ -1,0 +1,40 @@
+pentru a activa basa de date folosim mongod apoy deschidfem alt terminal si inintiem baza de dte cu comanda mongo
+
+- show dbs vede mce base de date avem 
+-use shopDB de expemplu schimbam la baza de date shopdb
+
+desi dam use shopDb trebuie sa creem table pentru a se activa 
+
+db pentru a vedea in ce baza de date ne aflam
+
+db.products.insertOne({nume:"gab",prenume:"nita"}) asa se creeaza o tabla 
+
+show collections putem vedea tables
+
+pentru a vedea operatiuni vezi crud in mongo db
+
+
+Reading querys
+ 
+pentru a gasi lucruri folosim
+
+daca vrem sa vedem tot ce avem in tabla utilizam
+
+db.products.find()
+
+db.products.find({name: "pen"}) de ex daca vrem sa vedem daca avem ceva cu numele pen
+
+pentru a utiliza proiectia putem face astfel
+db.product.find({_id:1},{name:1}) la primu parametru vrem sa ne gaseasca id 1 si la al doilea parametru ce sa ne arate de la id 1
+
+
+pentru a face un update
+
+db.products.updateOne({_id: 1}, {$set{stock: 32}}) asa adaugam la id 1 o columna stcok cu 32 de articole
+
+delete operation
+
+db.products.deleteOne({_id:1}) asa putem sterge tot ce avem la id 1
+
+pentru a sterge o database trebuie sa fim in ea si scrie db.dropDatabase()
+
